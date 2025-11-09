@@ -1,0 +1,26 @@
+// settings.json (workspace)
+{
+  // === PYTHON ===
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+
+  // Black como formatador padrão
+  "editor.defaultFormatter": "ms-python.black-formatter",
+
+  // === SQL / SQLFLUFF ===
+  // Dialeto que você usa (Athena). Troque se precisar: 'bigquery', 'postgres', etc.
+  "sqlfluff.dialect": "athena",
+  // Rodar linter no salvar
+  "sqlfluff.linter.run": "onSave",
+  // Caminho do executável do sqlfluff no seu venv (Windows aceita barra normal)
+  "sqlfluff.executablePath": "C:/Users/paula/Desktop/JORNADA DE DADOS/.venv/Scripts/sqlfluff.exe",
+
+  // === GERAL ===
+  "files.autoSave": "afterDelay"
+}
